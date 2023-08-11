@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap');
+
+
+* {
+  font-family: 'Space Grotesk', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+
+  padding: 150px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  background-image: url(../img/bckgr.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  color: #FFF;
+  font-size: 3em;
+  font-weight: 500;
+
+  position: absolute;
+  top: 50px;
+
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+@media screen and (max-width: 1060px) {
+  .container {
+    flex-direction: column;
+  }
+}
+.lang-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px;
+  width: 500px;
+
+  background-color: #F1F1F1;
+
+  border-radius: 16px;
+}
+
+.picker-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.from {
+  color: #767676;
+  font-size: 16px;
+}
+
+.picker-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.input .lang-picker,
+.output .lang-picker {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+
+  width: 320px;
+  height: 59px;
+
+
+  border-radius: 30px;
+  background: #adadad;
+
+  z-index: 2;
+}
+
+.output .lang-picker {
+  background: #adadad;;
+}
+
+ion-icon[name = "globe-outline"] {
+  width: 22px;
+  height: 22px;
+}
+
+.selected-lang {
+  color: #212121; 
+  font-size: 16px;
+}
+
+.select-btn {
+  width: 26px;
+  height: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+
+  transition: all 0.3s linear;
+}
+
+.select-btn:hover {
+  background-color: #212121;
+}
+
+.select-btn:hover ion-icon[name = "chevron-down-outline"] {
+  color: #e3e3e3;
+}
+ion-icon[name = "chevron-down-outline"] {
+  width: 22px;
+  height: 22px;
+}
+
+
+.options {
+  position: absolute;
+  top: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 30px;
+  padding: 30px 15px 10px;
+  width: 100%;
+  height: 300px;
+
+  background-color: #adadad;
+  border-radius: 0 0 16px 16px;
+  overflow-y: scroll;
+
+  list-style: none;
+  display: none;
+}
+
+.output .options{
+  background-color: #adadad;
+}
+.options.active {
+  display: block;
+}
+.option {
+  width: 100%;
+  padding: 18px 15px;
+  margin-bottom: 4px;
+
+  cursor: pointer;
+  border-radius: 20px;
+
+  color: #292929;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.option.active {
+  background-color: #212121;
+  color: #F1F1F1;
+}
+.option:hover {
+  background-color: #212121;
+  color: #F1F1F1;
+}
+
+textarea {
+  margin-top: 30px;
+  padding: 20px;
+
+  border: none;
+  resize: none;
+
+  border-radius: 24px;
+  resize: none;
+  font-size: 16px;
+  color: #292929;
+
+  height: 300px;
+}
+
+textarea:focus {
+  outline: none;
+}
+.symb-count {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+
+
+  color: #484848;
+  text-align: right;
+  font-size: 16px;
+}
+

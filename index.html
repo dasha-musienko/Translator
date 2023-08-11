@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/title-img.png" type="image/icon type">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Translator</title>
+</head>
+<body>
+  <h1>Language Translator</h1>
+
+  <div class="container">
+    <div class="lang-container input">
+      <div class="picker-container">
+        <h2 class="from">From:</h2>
+        <div class="picker-form">
+          <div class="lang-picker">
+            <ion-icon name="globe-outline"></ion-icon>
+            <p class="selected-lang">Auto (Detect)</p>
+            <button class="select-btn"><ion-icon name="chevron-down-outline"></ion-icon></button>
+          </div>
+
+          <ul class="options input">
+          </ul>
+        </div>
+      </div>
+      <textarea name="input-textearea" id="input-textearea" maxlength="5000" placeholder="Enter text"></textarea>
+      <span class="symb-count"><span class="count">0</span> / 5000</span>
+    </div>
+
+    <div class="lang-container output">
+      <div class="picker-container">
+        <h2 class="from">To:</h2>
+        <div class="picker-form">
+          <div class="lang-picker">
+            <ion-icon name="globe-outline"></ion-icon>
+            <p class="selected-lang">Auto (Detect)</p>
+            <button class="select-btn"><ion-icon name="chevron-down-outline"></ion-icon></button>
+          </div>
+
+          <ul class="options output">
+          </ul>
+        </div>
+      </div>
+      <textarea name="output-textearea" id="output-textearea" maxlength="5000" placeholder="Translated text will apear here" readonly></textarea>
+    </div>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="js/languages.js" ></script>
+  <script src="js/script.js" type="module"></script>
+</body>
+</html>
