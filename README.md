@@ -1,8 +1,7 @@
 <h2 align="center">Translator</h2>
 <img src="https://github.com/dasha-musienko/Translator/blob/main/img/cover.jpeg" alt="Cover image">
 <h2>⚡️Goal</h2>
-<p>Goals:
-The primary goal of the Language Translator project is to break down language barriers and facilitate effective communication by providing users with a reliable and user-friendly translation tool. The project aims to enable individuals to effortlessly translate text, documents, and messages in real time, fostering cross-cultural understanding and global connectivity.</p>
+<p>The primary goal of the Language Translator project is to break down language barriers and facilitate effective communication by providing users with a reliable and user-friendly translation tool. The project aims to enable individuals to effortlessly translate text, documents, and messages in real time, fostering cross-cultural understanding and global connectivity.</p>
 <h2>🔥Features</h2>
   <ul>
     <li><strong>Cloud Translation API Integration: </strong>Leveraging the Cloud Translation API, the project delivers accurate and efficient language translation services that harness the power of machine learning and artificial intelligence.
